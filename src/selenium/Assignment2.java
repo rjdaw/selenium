@@ -12,6 +12,8 @@ public class Assignment2 {
         WebDriver driver = new ChromeDriver(); //Create Driver object
         driver.get("https://www.cleartrip.com/");
 
+        Thread.sleep(2000);
+
         Select dropdown1 = new Select(driver.findElement(By.xpath("//*[@id='root']/div/div/div[1]/div/div[2]/div/div[4]/div/div[1]/select")));
         dropdown1.selectByVisibleText("2");
 
